@@ -1,0 +1,115 @@
+<!--
+  @TODO Challenge
+  Look out for @TODO tag and how to improve sections of the HTML using semantic markup
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 2: Semantic Exercise </title>
+</head>
+
+  <body>
+    <!--@TODO how we improve the top section here with semantics? -->
+    <header>
+      <h1>Experience VR</h1>
+      <p>A simple blog about virtual reality experiences</p>
+      <!--@TODO how can we improve the navigation here? -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <p>Virtual Reality is becoming well known as a form of entertainment, but it's also finding its way into fields like education, industrial design, healthcare and so much more!</p>
+    <a href="https://np.edu.sg" target="_blank">Start Your VR Journey</a>
+    
+    <!--@TODO what can we do about this area here? -->
+    <article>
+      <h2>About this Site</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula metus in bibendum laoreet. Aenean libero est, egestas eu eros pretium, sodales iaculis est.</p>
+    </article>
+    
+     <!--@TODO what can we do about this area here? -->
+    <article>
+      <!--@TODO how can we improve the articles here? -->
+      <h2>Latest VR Articles</h2>
+      
+      <h3>How Schools Use Virtual Reality to Improve Education</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices euismod turpis eget porta. Etiam nulla massa, pretium et massa nec, ornare dignissim nisi.</p>
+      <a href="#">Read more</a>
+      
+      <h3>The Advantages of VR Simulation</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices euismod turpis eget porta. Etiam nulla massa, pretium et massa nec, ornare dignissim nisi.</p>
+      <img src="img/featured.jpg" title="Featured VR" alt="Featured VR"><br/>
+      <a href="#">Read more</a>
+    </article>
+    
+    <aside>
+    <h3>Top VR Resources</h3>
+    <!--@TODO how can we improve this related content here? -->
+      <ol>   
+        <li><a href="#">Learn to create educational experiences in VR</a></li>
+        <li><a href="#">Virtual Reality in entertainment</a></li>
+        <li><a href="#">Interact with buildings and products in VR</a></li>
+        <li><a href="#">Use VR for teleconferencing and social media</a></li>
+      </ol>
+    </aside>
+    
+    <section>
+      <h2>Contact</h2>
+      <p>Email us at idiscool@gmail.com</p>
+    </section>
+    
+    <footer>
+      <p>&copy;2020 Experience VR, The Blog</p>
+    </footer>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
+
+
+
+

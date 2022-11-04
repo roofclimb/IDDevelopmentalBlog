@@ -1,0 +1,64 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Island Moments', cursive;;
+}   
+
+ul,ol{
+    color:blueviolet;
+    background-color: aqua;
+}
+
+h1{
+    color:white; 
+    text-align: center;
+    background-color: red;
+}
+
+h2{
+    color:goldenrod;
+    text-align: right;
+}
+
+h3{
+    color:orange;
+}
+
+h4{
+    color:green;
+    text-align: right;
+}
+
+h5{
+    color:blue;
+}
+
+h6{
+    color:purple;
+    text-align: right;
+}
+
+img{
+    border: brown 3px solid;
+    border-radius: 4px;
+}
+
+div{
+    color:orangered;
+    text-align: center;
+}
+
+p{
+    color:green;
+    text-align: right;
+}
+
+a:link{
+    color:blue;
+}
+
+a:hover{
+    color:orange;
+}
