@@ -1,0 +1,23 @@
+table,tr,th,td{
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+    background-color: #D6EEEE;
+}
+
+th{
+    background-color: #ffff00;
+}
+
+td{
+    text-align:center;
+}
+
+img{
+    border: 3px solid;
+    border-radius: 4px;
+    width: 450px; 
+    height: 300px;
+}
