@@ -68,12 +68,24 @@
     }
 
     .poster {
-			max-width: 100%;}
-      
+			max-width: 100%; /*let it fill to the max width of the container div */
+			height: 400px;
+			/* use random 1024px by 800px photo */
+			background-image: url('https://picsum.photos/1024/800');
+			background-repeat: no-repeat;
+			
+      position: relative; /* just for positioning the heading*/
+
+		}
+    .cover {
+			background-size: cover;
+		}
 	</style>
 </head>
 
 <body>
+	<div class="poster cover">
+	</div>
 	<section class="container">
 		<div class="flex-item">
 			<div class="flex-img">
