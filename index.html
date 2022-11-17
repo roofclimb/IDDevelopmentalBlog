@@ -1,6 +1,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     </head>
         <body>
             <h1>Week 1 Blog</h1>
@@ -68,6 +73,132 @@
                     </ol>
                 <li>Google font can be taken online to use in website</li>
             </ul>
+
+            <h1>Week 3 Blog</h1>
+            <h2>Input tag</h2>
+            <ul>
+                <li>input type="text"</li>
+                <li>input type="date"</li>
+                <li>input type="color"</li>
+                <li>input type="file"</li>
+                <li>input type="checkbox"</li>
+                <li>input type="radio"</li>
+                <li>input type="submit"</li>
+            </ul>
+            <h2>Labels</h2>
+            <ul>
+                <li>
+                    input type="text" placeholder="hinting text" name="username"
+                </li>
+                <li>
+                    label for = "username" Username: /label
+                    input type="text" placeholder="hinting text" name="username" id="username"
+                </li>
+            </ul>
+            <h2>Validation</h2>
+            <ul>
+                <li>
+                    make sure that email has @ in it
+                    <ul>
+                        <li>
+                            input type="email" placeholder="Email..." name="email" id="email" required
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    make sure that password is filled
+                    <ul>
+                        <li>
+                            input type="password" placeholder="Password Pls!" name="password" id="password" required
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h2>Media Query</h2>
+            <ul>
+                <li>
+                    @media screen and (min-width:576px) -> when the browser viewport is at least 576px apply rules here
+                </li>
+            </ul>
+            <h2>Positioning</h2>
+            <ul>
+                <li>Relative</li>
+                <ul>
+                    <li>For tweaking the position of an element without affecting its surrounding boxes</li>
+                </ul>
+                <li>Absolute</li>
+                <ul>
+                    <li>Take elements out of the static flow of the page and place relative to the browser window</li>
+                </ul>
+                <li>Fixed</li>
+                <ul>
+                    <li>Make elements do not scroll with the rest of the page(sticky)</li>
+                </ul>
+                <li>Z-Index</li>
+            </ul>
+            <h2>Flexbox</h2>
+            <ul>
+                <li>display:flex</li>
+                <li>flex-direction: column</li>
+                <li>flex-container</li>
+            </ul>
+            <h2>Wireframes</h2>
+            <ul>
+                Wireframes are not:
+                <li>
+                    Visual Design
+                </li>
+                <li>Typography</li>
+                <li>Iconology</li>
+                <li>Photography</li>
+                Wireframes can:
+                <li>Quickly generate ideas</li>
+                <li>Aids discussion</li>
+                <li>Show content hierarchy</li>
+                <li>Establish key functionality</li>
+            </ul>
+            <h1>Week 4 Blog</h1>
+            <h2>Responsive Images</h2>
+            <ul>
+                <li>background-size: cover</li>
+                <li>Try flexing the website to see the font color change to blue </li>
+            </ul>
+            <ul class="flex-container">
+                <li class="flex-item class">1</li>
+                <li class="flex-item class">2</li>
+                <li class="flex-item class">3</li>
+                <li class="flex-item class">4</li>
+                <li class="flex-item class">5</li>
+                <li class="flex-item class">6</li>
+            </ul>
+            <h1>Week 5 Blog</h1>
+            <h2>JavaScript</h2>
+            <ul>
+                <li>To write in the console-> console.log</li>
+                <li>objects: const objectName </li>
+                <li>functions -> newname:function(name){this.name=name} : to ammend properties of objects</li>
+                <li>class -> class Stationary{
+                    constructor(
+                        name,
+                        color,
+                        length,
+                        ink
+                    )</li>
+                <li>call class -> const pen=new Stationary(
+                    "pen",
+                    "black",
+                    30,
+                    "blue"
+                )</li>
+                <li>
+                    to change style of particular element -> document.querySelectorAll("main li").forEach(item => item.style.backgroundColor="red");
+                </li>
+                <li>
+                    Set attributes -> document.querySelector("img").setAttribute("alt","A backpack drawing");
+                </li>
+            </ul>
+
+        
         </body>
     
 </html>
