@@ -6,3 +6,21 @@
  * - Create several objects using the class.
  * - Test the objecs by calling their properties and using their methods in the console.
  */
+
+import Stationary from "./Stationary.js";
+
+const pen=new Stationary(
+    "pen",
+    "black",
+    30,
+    "blue"
+)
+
+const pencil=new Stationary(
+    "pencil",
+    "yellow",
+    20,
+    "grey"
+)
+console.log("The pen object: ",pen);
+console.log("The pencil object: ",pencil);
