@@ -1,53 +1,82 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-    </head>
-        <body>
-            <h1>Week 1 Blog</h1>
-            <h2>HTML</h2>
-            <ul>
-                <li>html-defines root of HTML document</li>
-                <li>head-contains information for the document</li>
-                <li>body-includes important information</li>
-                <li>h1 to h6- different headings from biggest to smallest font size</li>
-                <li>p-paragraph</li>
-                <li>ul,ol - unordered list and order list</li>
-                <li>li-defines each list element</li>
-                <li>img-contains an image</li>
-                <li>a-used for hyperlinks</li>
-                <li>br-break</li>
-                <li>hr-horizontal rule</li>
-                <li>table-creates a table</li>
-                <ul>
-                    <li>th-table heading</li>
-                    <li>td-table heading</li>
-                </ul>
-                <li>iframe-to embed YouTube videos</li>
-                <li>div-define a section</li>
-                <li>strong/em-bold the text</li>
-            </ul>
-            <h2>CSS styling</h2>
-            <ol>
-                <li>background color: color</li>
-                <li>color: red</li>
-                <li>border size, border color, border-collapse(for border to become one line)</li>
-            </ol>
-            <p>
-                This is my first website - recipe card for banana cake
-            </p>
-            <img src="bananacake1.jpg" alt="recipecard" title="recipecard">
-            <br>
-            <img src="bananacake2.jpg" alt="recipecard" title="recipecard">
-            <br>
-            <br>
+<head>
+  <title>Dev Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="view-modified.png">
+<link rel="stylesheet" href="style.css">
+<style>
+.collapsible {
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
+.active, .collapsible:hover {
+  background-color: blue;
+  color:white;
+}
 
-            <h1>Week 2 Blog</h1>
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h1>Interactive Developmental Blog</h1>
+<button type="button" class="collapsible">Week 1</button>
+<div class="content">
+  <h1>Week 1 Blog</h1>
+    <h2>HTML</h2>
+    <ul>
+        <li>html-defines root of HTML document</li>
+        <li>head-contains information for the document</li>
+        <li>body-includes important information</li>
+        <li>h1 to h6- different headings from biggest to smallest font size</li>
+        <li>p-paragraph</li>
+        <li>ul,ol - unordered list and order list</li>
+        <li>li-defines each list element</li>
+        <li>img-contains an image</li>
+        <li>a-used for hyperlinks</li>
+        <li>br-break</li>
+        <li>hr-horizontal rule</li>
+        <li>table-creates a table</li>
+        <ul>
+            <li>th-table heading</li>
+            <li>td-table heading</li>
+        </ul>
+        <li>iframe-to embed YouTube videos</li>
+        <li>div-define a section</li>
+        <li>strong/em-bold the text</li>
+    </ul>
+    <h2>CSS styling</h2>
+    <ol>
+        <li>background color: color</li>
+        <li>color: red</li>
+        <li>border size, border color, border-collapse(for border to become one line)</li>
+    </ol>
+    <p>
+        This is my first website - recipe card for banana cake
+    </p>
+    <img src="bananacake1.jpg" alt="recipecard" title="recipecard">
+    <br>
+    <img src="bananacake2.jpg" alt="recipecard" title="recipecard">
+    <br>
+    <br>
+</div>
+<button type="button" class="collapsible">Week 2</button>
+<div class="content">
+  <h1>Week 2 Blog</h1>
             <h2>Semantic Web</h2>
             <ul>
                 <li>can use other tags instead of div</li>
@@ -73,105 +102,113 @@
                     </ol>
                 <li>Google font can be taken online to use in website</li>
             </ul>
-
-            <h1>Week 3 Blog</h1>
-            <h2>Input tag</h2>
-            <ul>
-                <li>input type="text"</li>
-                <li>input type="date"</li>
-                <li>input type="color"</li>
-                <li>input type="file"</li>
-                <li>input type="checkbox"</li>
-                <li>input type="radio"</li>
-                <li>input type="submit"</li>
-            </ul>
-            <h2>Labels</h2>
-            <ul>
-                <li>
-                    input type="text" placeholder="hinting text" name="username"
-                </li>
-                <li>
-                    label for = "username" Username: /label
-                    input type="text" placeholder="hinting text" name="username" id="username"
-                </li>
-            </ul>
-            <h2>Validation</h2>
-            <ul>
-                <li>
-                    make sure that email has @ in it
-                    <ul>
-                        <li>
-                            input type="email" placeholder="Email..." name="email" id="email" required
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    make sure that password is filled
-                    <ul>
-                        <li>
-                            input type="password" placeholder="Password Pls!" name="password" id="password" required
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <h2>Media Query</h2>
-            <ul>
-                <li>
-                    @media screen and (min-width:576px) -> when the browser viewport is at least 576px apply rules here
-                </li>
-            </ul>
-            <h2>Positioning</h2>
-            <ul>
-                <li>Relative</li>
-                <ul>
-                    <li>For tweaking the position of an element without affecting its surrounding boxes</li>
-                </ul>
-                <li>Absolute</li>
-                <ul>
-                    <li>Take elements out of the static flow of the page and place relative to the browser window</li>
-                </ul>
-                <li>Fixed</li>
-                <ul>
-                    <li>Make elements do not scroll with the rest of the page(sticky)</li>
-                </ul>
-                <li>Z-Index</li>
-            </ul>
-            <h2>Flexbox</h2>
-            <ul>
-                <li>display:flex</li>
-                <li>flex-direction: column</li>
-                <li>flex-container</li>
-            </ul>
-            <h2>Wireframes</h2>
-            <ul>
-                Wireframes are not:
-                <li>
-                    Visual Design
-                </li>
-                <li>Typography</li>
-                <li>Iconology</li>
-                <li>Photography</li>
-                Wireframes can:
-                <li>Quickly generate ideas</li>
-                <li>Aids discussion</li>
-                <li>Show content hierarchy</li>
-                <li>Establish key functionality</li>
-            </ul>
-            <h1>Week 4 Blog</h1>
-            <h2>Responsive Images</h2>
-            <ul>
-                <li>background-size: cover</li>
-                <li>Try flexing the website to see the font color change to blue </li>
-            </ul>
-            <ul class="flex-container">
-                <li class="flex-item class">1</li>
-                <li class="flex-item class">2</li>
-                <li class="flex-item class">3</li>
-                <li class="flex-item class">4</li>
-                <li class="flex-item class">5</li>
-                <li class="flex-item class">6</li>
-            </ul>
-            <h1>Week 5 Blog</h1>
+</div>
+<button type="button" class="collapsible">Week 3</button>
+<div class="content">
+  <h1>Week 3 Blog</h1>
+  <h2>Input tag</h2>
+  <ul>
+      <li>input type="text"</li>
+      <li>input type="date"</li>
+      <li>input type="color"</li>
+      <li>input type="file"</li>
+      <li>input type="checkbox"</li>
+      <li>input type="radio"</li>
+      <li>input type="submit"</li>
+  </ul>
+  <h2>Labels</h2>
+  <ul>
+      <li>
+          input type="text" placeholder="hinting text" name="username"
+      </li>
+      <li>
+          label for = "username" Username: /label
+          input type="text" placeholder="hinting text" name="username" id="username"
+      </li>
+  </ul>
+  <h2>Validation</h2>
+  <ul>
+      <li>
+          make sure that email has @ in it
+          <ul>
+              <li>
+                  input type="email" placeholder="Email..." name="email" id="email" required
+              </li>
+          </ul>
+      </li>
+      <li>
+          make sure that password is filled
+          <ul>
+              <li>
+                  input type="password" placeholder="Password Pls!" name="password" id="password" required
+              </li>
+          </ul>
+      </li>
+  </ul>
+  <h2>Media Query</h2>
+  <ul>
+      <li>
+          @media screen and (min-width:576px) -> when the browser viewport is at least 576px apply rules here
+      </li>
+  </ul>
+  <h2>Positioning</h2>
+  <ul>
+      <li>Relative</li>
+      <ul>
+          <li>For tweaking the position of an element without affecting its surrounding boxes</li>
+      </ul>
+      <li>Absolute</li>
+      <ul>
+          <li>Take elements out of the static flow of the page and place relative to the browser window</li>
+      </ul>
+      <li>Fixed</li>
+      <ul>
+          <li>Make elements do not scroll with the rest of the page(sticky)</li>
+      </ul>
+      <li>Z-Index</li>
+  </ul>
+  <h2>Flexbox</h2>
+  <ul>
+      <li>display:flex</li>
+      <li>flex-direction: column</li>
+      <li>flex-container</li>
+  </ul>
+  <h2>Wireframes</h2>
+  <ul>
+      Wireframes are not:
+      <li>
+          Visual Design
+      </li>
+      <li>Typography</li>
+      <li>Iconology</li>
+      <li>Photography</li>
+      Wireframes can:
+      <li>Quickly generate ideas</li>
+      <li>Aids discussion</li>
+      <li>Show content hierarchy</li>
+      <li>Establish key functionality</li>
+  </ul>
+</div>
+<button type="button" class="collapsible">Week 4</button>
+<div class="content">
+  <h1>Week 4 Blog</h1>
+  <h2>Responsive Images</h2>
+  <ul>
+      <li>background-size: cover</li>
+      <li>Try flexing the website to see the font color change to blue </li>
+  </ul>
+  <ul class="flex-container">
+      <li class="flex-item class">1</li>
+      <li class="flex-item class">2</li>
+      <li class="flex-item class">3</li>
+      <li class="flex-item class">4</li>
+      <li class="flex-item class">5</li>
+      <li class="flex-item class">6</li>
+  </ul>
+</div>
+<button type="button" class="collapsible">Week 5</button>
+<div class="content">
+  <h1>Week 5 Blog</h1>
             <h2>JavaScript</h2>
             <ul>
                 <li>To write in the console-> console.log</li>
@@ -197,9 +234,10 @@
                     Set attributes -> document.querySelector("img").setAttribute("alt","A backpack drawing");
                 </li>
             </ul>
-
-
-            <h1>Week 6 Blog</h1>
+</div>
+<button type="button" class="collapsible">Week 6</button>
+<div class="content">
+  <h1>Week 6 Blog</h1>
             <h2>JavaScript Basics</h2>
             <ul>
                 <li>A variable is a named container for a value</li>
@@ -228,54 +266,100 @@
             <li>e.g. document.getElementById('one')</li>
         
             </ul>
+</div>
+<button type="button" class="collapsible">Week 7</button>
+<div class="content">
+  <h1>Week 7 Blog</h1>
+  <h2>Event Listener</h2>
+  <ul>
+      <li>element.addEventListener('event',functionName,[Boolean]);</li>
+  </ul>
+  <h2>Forms and validation</h2>
+  <ul>
+      <li>Prevent user from entering invalid inputs</li>
+      <li>textboxes -> input type="text" </li>
+      <li>Dropdown selection</li>
+      <select name="locations" id="locations">
+          <option value="north-yishun">Yishun</option>
+          <option value="east-changi">Changi</option>
+          <option value="west-clementi">Clementi</option>
+      </select>
+  </ul>
+  <h2>JSON Local storage</h2>
+  <ul>
+      <li>localStorage.setItem('age','12')</li>
+      <li>JSON data is made up of keys and values</li>
+      <li>{"name": "Pikachu","hp":"200"}</li>
+  </ul>
+</div>
+<button type="button" class="collapsible">Week 8</button>
+<div class="content">
+  <h1>Week 8 Blog</h1>
+  <h2>jQuery</h2>
+  <ul>
+      <li>jQuery('li.hot')</li>
+      <li>$('li.hot').hide()</li>
+      <li>$("div") -> selects all div elements</li>
+      <li>$("#page") -> selects any with id of 'page'</li>
+      <li>$('#two').html('Goodbye World!') -> Changing content</li>
+      <li>Use remove() to remove element from DOM</li>
+  </ul>
+</div>
+<button type="button" class="collapsible">Week 9</button>
+<div class="content">
+  <h1>Week 9 Blog</h1>
+  <h2>Bootstrap</h2>
+  <ul>
+      <li>Allows us to simplify our development process</li>
+      <li>Uses Flexbox grid</li>
+  </ul>
+</div>
+<button type="button" class="collapsible">Week 12</button>
+<div class="content">
+  <h1>Week 12 Blog</h1>
+  <h2>RestDB</h2>
+  <ul>
+      <li>NoSQL provides a mechanism for storage and retrieval od unstructured data</li>
+      <li>GET-Returns all data in database</li>
+      <li>POST-Register new data</li>
+      <li>PUSH-Update existing data</li>
+      <li>DELETE-Remove existing data</li>
+    </ul>
+</div>
+<button type="button" class="collapsible">Week 14</button>
+<div class="content">
+  <h1>Week 14 Blog</h1>
+  <h2>Lottie Animation</h2>
+  <ul>
+    <li>Lottie Animation allows additional interactivity</li>
+    <li><a href="https://lottiefiles.com/search?q=loading&category=animations">Link</a> for lottie animation</li>
+    <li>It can be used for: 
+      <ul>
+        <li>Loading bars</li>
+        <li>Contact Forms</li>
+        <li>Website Landing Page</li>
+        <li>Success messages</li>
+      </ul>
+    </li>
+  </ul>
+</div>
 
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-            <h1>Week 7 Blog</h1>
-            <h2>Event Listener</h2>
-            <ul>
-                <li>element.addEventListener('event',functionName,[Boolean]);</li>
-            </ul>
-            <h2>Forms and validation</h2>
-            <ul>
-                <li>Prevent user from entering invalid inputs</li>
-                <li>textboxes -> input type="text" </li>
-                <li>Dropdown selection</li>
-                <select name="locations" id="locations">
-                    <option value="north-yishun">Yishun</option>
-                    <option value="east-changi">Changi</option>
-                    <option value="west-clementi">Clementi</option>
-                </select>
-            </ul>
-            <h2>JSON Local storage</h2>
-            <ul>
-                <li>localStorage.setItem('age','12')</li>
-                <li>JSON data is made up of keys and values</li>
-                <li>{"name": "Pikachu","hp":"200"}</li>
-            </ul>
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
-            <h1>Week 8 Blog</h1>
-            <h2>jQuery</h2>
-            <ul>
-                <li>jQuery('li.hot')</li>
-                <li>$('li.hot').hide()</li>
-                <li>$("div") -> selects all div elements</li>
-                <li>$("#page") -> selects any with id of 'page'</li>
-                <li>$('#two').html('Goodbye World!') -> Changing content</li>
-                <li>Use remove() to remove element from DOM</li>
-            </ul>
-
-            <h1>Week 9 Blog</h1>
-            <h2>Bootstrap</h2>
-            <ul>
-                <li>Allows us to simplify our development process</li>
-                <li>Uses Flexbox grid</li>
-            </ul>
-            
-            <h1>Week 12 Blog</h1>
-            <h2>RestDB</h2>
-            <ul>
-                <li>NoSQL provides a mechanism for storage and retrieval od unstructured data</li>
-            </ul>
-        </body>
-    
+</body>
 </html>
