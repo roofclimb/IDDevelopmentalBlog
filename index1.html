@@ -2,10 +2,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 <style>
 .collapsible {
-  background-color: green;
-  color: white;
+  background-color: lightblue;
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -17,6 +18,7 @@
 
 .active, .collapsible:hover {
   background-color: blue;
+  color:white;
 }
 
 .content {
@@ -32,6 +34,7 @@
 <h1>Interactive Developmental Blog</h1>
 <button type="button" class="collapsible">Week 1</button>
 <div class="content">
+  <h1>Week 1 Blog</h1>
     <h2>HTML</h2>
     <ul>
         <li>html-defines root of HTML document</li>
@@ -71,11 +74,272 @@
 </div>
 <button type="button" class="collapsible">Week 2</button>
 <div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <h1>Week 2 Blog</h1>
+            <h2>Semantic Web</h2>
+            <ul>
+                <li>can use other tags instead of div</li>
+                <li>header is used at the top of the page content</li>
+                <li>article is commonly used for news content, blog posts and independent content piece</li>
+                <li>nav is for menu links</li>
+                <li>aside is for content that is indirectly related to your main content</li>
+            </ul>
+            <h2>CSS</h2>
+            <ul>
+                <li>link element: link rel="stylesheet" href="basic.css" type="type/css"</li>
+                <li>can add font colour or words colour colour: red</li>
+                <li>font family and text-align can also be specified</li>
+                <li>ID attribute: #myElement</li>
+                <li>Class attribute: .myClass</li>
+                <li>Pseudo classes</li>
+                    <ol>
+                        <li>a:link (unvisited)</li>
+                        <li>a:visited (visited)</li>
+                        <li>a:hover (mouse over)</li>
+                        <li>a:active (current link)</li>
+                        <li>a:focus (focus link)</li>
+                    </ol>
+                <li>Google font can be taken online to use in website</li>
+            </ul>
 </div>
 <button type="button" class="collapsible">Week 3</button>
 <div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <h1>Week 3 Blog</h1>
+  <h2>Input tag</h2>
+  <ul>
+      <li>input type="text"</li>
+      <li>input type="date"</li>
+      <li>input type="color"</li>
+      <li>input type="file"</li>
+      <li>input type="checkbox"</li>
+      <li>input type="radio"</li>
+      <li>input type="submit"</li>
+  </ul>
+  <h2>Labels</h2>
+  <ul>
+      <li>
+          input type="text" placeholder="hinting text" name="username"
+      </li>
+      <li>
+          label for = "username" Username: /label
+          input type="text" placeholder="hinting text" name="username" id="username"
+      </li>
+  </ul>
+  <h2>Validation</h2>
+  <ul>
+      <li>
+          make sure that email has @ in it
+          <ul>
+              <li>
+                  input type="email" placeholder="Email..." name="email" id="email" required
+              </li>
+          </ul>
+      </li>
+      <li>
+          make sure that password is filled
+          <ul>
+              <li>
+                  input type="password" placeholder="Password Pls!" name="password" id="password" required
+              </li>
+          </ul>
+      </li>
+  </ul>
+  <h2>Media Query</h2>
+  <ul>
+      <li>
+          @media screen and (min-width:576px) -> when the browser viewport is at least 576px apply rules here
+      </li>
+  </ul>
+  <h2>Positioning</h2>
+  <ul>
+      <li>Relative</li>
+      <ul>
+          <li>For tweaking the position of an element without affecting its surrounding boxes</li>
+      </ul>
+      <li>Absolute</li>
+      <ul>
+          <li>Take elements out of the static flow of the page and place relative to the browser window</li>
+      </ul>
+      <li>Fixed</li>
+      <ul>
+          <li>Make elements do not scroll with the rest of the page(sticky)</li>
+      </ul>
+      <li>Z-Index</li>
+  </ul>
+  <h2>Flexbox</h2>
+  <ul>
+      <li>display:flex</li>
+      <li>flex-direction: column</li>
+      <li>flex-container</li>
+  </ul>
+  <h2>Wireframes</h2>
+  <ul>
+      Wireframes are not:
+      <li>
+          Visual Design
+      </li>
+      <li>Typography</li>
+      <li>Iconology</li>
+      <li>Photography</li>
+      Wireframes can:
+      <li>Quickly generate ideas</li>
+      <li>Aids discussion</li>
+      <li>Show content hierarchy</li>
+      <li>Establish key functionality</li>
+  </ul>
+</div>
+<button type="button" class="collapsible">Week 4</button>
+<div class="content">
+  <h1>Week 4 Blog</h1>
+  <h2>Responsive Images</h2>
+  <ul>
+      <li>background-size: cover</li>
+      <li>Try flexing the website to see the font color change to blue </li>
+  </ul>
+  <ul class="flex-container">
+      <li class="flex-item class">1</li>
+      <li class="flex-item class">2</li>
+      <li class="flex-item class">3</li>
+      <li class="flex-item class">4</li>
+      <li class="flex-item class">5</li>
+      <li class="flex-item class">6</li>
+  </ul>
+</div>
+<button type="button" class="collapsible">Week 5</button>
+<div class="content">
+  <h1>Week 5 Blog</h1>
+            <h2>JavaScript</h2>
+            <ul>
+                <li>To write in the console-> console.log</li>
+                <li>objects: const objectName </li>
+                <li>functions -> newname:function(name){this.name=name} : to ammend properties of objects</li>
+                <li>class -> class Stationary{
+                    constructor(
+                        name,
+                        color,
+                        length,
+                        ink
+                    )</li>
+                <li>call class -> const pen=new Stationary(
+                    "pen",
+                    "black",
+                    30,
+                    "blue"
+                )</li>
+                <li>
+                    to change style of particular element -> document.querySelectorAll("main li").forEach(item => item.style.backgroundColor="red");
+                </li>
+                <li>
+                    Set attributes -> document.querySelector("img").setAttribute("alt","A backpack drawing");
+                </li>
+            </ul>
+</div>
+<button type="button" class="collapsible">Week 6</button>
+<div class="content">
+  <h1>Week 6 Blog</h1>
+            <h2>JavaScript Basics</h2>
+            <ul>
+                <li>A variable is a named container for a value</li>
+                <li>Each variable must have a unique name</li>
+                <li>Strings must be enclosed in double quotes or single quotes</li>
+                <li>Logical Operators allow you to compare the results of more than one comparison operator.</li>
+                <li>&& -> Logical And</li>
+                <li>|| -> Logical Or</li>
+                <li>Repitition/Loops checks a condition. If true is returned, code block will run. And the code returns till false is returned</li>
+                <li>Declaring a function -> function sayHello()</li>
+            </ul>
+            <h2>Objects</h2>
+            <ul>
+            <li>Objects group together a set of variables and functions to create a model</li>
+            <li>let hotel = {
+                name: 'Raffles Hotel'
+                rooms: 100}</li>
+            <li>Updatung property of object -> hotel.name='Sentosa hotel'</li>
+            </ul>
+            <h2>DOM</h2>
+            <ul>
+            <li>A model of a webpage</li>
+            <li>getElementById() -> uses value of element's id attribute</li>
+            <li>querySelector() -> returns first matching element</li>
+            <li>getElementsByClassName() -> selects all elements that have a specific value for their class attribute</li>
+            <li>e.g. document.getElementById('one')</li>
+        
+            </ul>
+</div>
+<button type="button" class="collapsible">Week 7</button>
+<div class="content">
+  <h1>Week 7 Blog</h1>
+  <h2>Event Listener</h2>
+  <ul>
+      <li>element.addEventListener('event',functionName,[Boolean]);</li>
+  </ul>
+  <h2>Forms and validation</h2>
+  <ul>
+      <li>Prevent user from entering invalid inputs</li>
+      <li>textboxes -> input type="text" </li>
+      <li>Dropdown selection</li>
+      <select name="locations" id="locations">
+          <option value="north-yishun">Yishun</option>
+          <option value="east-changi">Changi</option>
+          <option value="west-clementi">Clementi</option>
+      </select>
+  </ul>
+  <h2>JSON Local storage</h2>
+  <ul>
+      <li>localStorage.setItem('age','12')</li>
+      <li>JSON data is made up of keys and values</li>
+      <li>{"name": "Pikachu","hp":"200"}</li>
+  </ul>
+</div>
+<button type="button" class="collapsible">Week 8</button>
+<div class="content">
+  <h1>Week 8 Blog</h1>
+  <h2>jQuery</h2>
+  <ul>
+      <li>jQuery('li.hot')</li>
+      <li>$('li.hot').hide()</li>
+      <li>$("div") -> selects all div elements</li>
+      <li>$("#page") -> selects any with id of 'page'</li>
+      <li>$('#two').html('Goodbye World!') -> Changing content</li>
+      <li>Use remove() to remove element from DOM</li>
+  </ul>
+</div>
+<button type="button" class="collapsible">Week 9</button>
+<div class="content">
+  <h1>Week 9 Blog</h1>
+  <h2>Bootstrap</h2>
+  <ul>
+      <li>Allows us to simplify our development process</li>
+      <li>Uses Flexbox grid</li>
+  </ul>
+</div>
+<button type="button" class="collapsible">Week 12</button>
+<div class="content">
+  <h1>Week 12 Blog</h1>
+  <h2>RestDB</h2>
+  <ul>
+      <li>NoSQL provides a mechanism for storage and retrieval od unstructured data</li>
+      <li>GET-Returns all data in database</li>
+      <li>POST-Register new data</li>
+      <li>PUSH-Update existing data</li>
+      <li>DELETE-Remove existing data</li>
+    </ul>
+</div>
+<button type="button" class="collapsible">Week 14</button>
+<div class="content">
+  <h1>Week 14 Blog</h1>
+  <h2>Lottie Animation</h2>
+  <ul>
+    <li>Lottie Animation allows additional interactivity</li>
+    <li><a href="https://lottiefiles.com/search?q=loading&category=animations">Link</a> for lottie animation</li>
+    <li>It can be used for: 
+      <ul>
+        <li>Loading bars</li>
+        <li>Contact Forms</li>
+        <li>Website Landing Page</li>
+        <li>Success messages</li>
+      </ul>
+    </li>
+  </ul>
 </div>
 
 <script>
